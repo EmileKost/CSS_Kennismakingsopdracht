@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>CSS Opdracht</title>
+</head>
+<body>
+    <header>
+        <h1>Kennismakingsopdracht CSS</h1>
+    </header>
+        <main>
+        <figure>
+            <img src="images/valid.jpg" alt="foto van code over valid en invalid">
+            <figcaption>
+                Deze code is gebruikt om feedback aan de gebruiker te geven of de waarde valid of
+                invalid is.
+            </figcaption>
+        </figure>
+        <label for="email">Email adres</label>
+        <input type="email"
+        id="email"
+        name="email" required/>
+            <label for="name">Voornaam</label>
+                <input type="name"
+                id="name"
+                name="name" required/>
+                <figure>
+                <img src="images/placeholder.jpg" alt="foto met code van placeholder">
+                <figcaption>Deze code is gebruikt bij het kiezen van een stad.
+                    Je kunt alleen zoeken wanneer er een waarde van minimaal drie karakters hebt
+                    ingevuld.
+                </figcaption>
+            </figure>
+                    <label for="stad">Welke stad?</label>
+                        <input placeholder="stad zoeken..." minlength="3" required>
+                            <button>Stad zoeken!</button>
+        <figure>
+            <img src="images/checkbox.jpg" alt="code over de checkbox">
+            <figcaption>Om feedback aan de gebruiker te geven maak je gebruik
+                van :checked en kan je hierdoor in de CSS feedback geven door middel van
+                kleur en feedback.
+            </figcaption>
+        </figure>
+        <p>Vind je Alfa Romeo een mooi automerk?</p>
+        <section>
+            <input type="checkbox" name="ja" id="ja">
+            <label for="ja">Ja</label>
+            <input type="checkbox" name="nee" id="nee">
+            <label for="nee">Nee</label>
+                </section>
+        <figure>
+            <img src="images/inrange.jpg" alt="code over de in-range methode">
+            <figcaption>Om feedback te geven of de waarde er binnen of buiten valt
+                gebruik je in-range of out-of-range en kan je door middel van CSS feedback
+                geven door middel van kleur of tekst.
+            </figcaption>
+        </figure>
+        <p>Een getal tussen 1 en 20</p>
+        <section>
+            <label for="getal">Jouw getal is</label>
+            <input id="getal" name="getal" type="number"
+                placeholder="1 tot 20" min="1" max="20" value="23" required>
+            </section>
+    </main>
+    <footer>
+        <figure>
+            <img src="images/target2.jpg" alt="foto met uitleg van de target code in CSS">
+            <figcaption>Door een bepaald element een target of value te geven kan je
+                in de CSS dit element specifiek aanroepen door [target=""] te gebruiken zodat
+                je deze losstaand van de andere kan aanpassen
+            </figcaption>
+        </figure>
+        <a target="red" href="google.com">Google.com</a>
+        <a href="bol.com">Bol.com</a>
+        <a href="wikipedia.com">Wikipedia.com</a>
+    </footer>
+</body>
+</html>

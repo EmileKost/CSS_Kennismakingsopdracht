@@ -1,0 +1,151 @@
+body {
+    font-family: montserrat;
+    background-color: #22223b;
+    color: #fefefe;
+}
+
+h1 {
+    text-align: center;
+    color: #fefefe
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    margin-top: 20px;
+}
+
+
+figcaption {
+    margin-right: 40%;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+
+img:hover {
+    height: 400px;
+    width: 600px;
+}
+
+
+h1:hover {
+    color:#560bad;
+    animation: rotation 2s infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+main input {
+    max-width: 300px;
+}
+
+input:first-of-type:valid:focus {
+    background-color: green;
+}
+
+input:first-of-type:invalid:focus {
+    background-color: red;
+}
+
+input:nth-of-type(2):valid:focus {
+    background-color: green;
+}
+
+input:nth-of-type(2):invalid:focus {
+    background-color: red;
+}
+
+button {
+    max-width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    font-family: montserrat;
+    background-color: goldenrod;
+    border: none;
+    box-shadow: gray;
+    display: none;
+}
+
+button:hover {
+    text-shadow: ivory;
+    font-weight: bold;
+}
+
+input:nth-of-type(3):not(:placeholder-shown) + button {
+    display: block;
+}
+
+input:nth-of-type(3):valid:focus {
+    background-color: green;
+}
+
+input:nth-of-type(3):invalid:focus {
+    background-color: red;
+    color: #fefefe
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="checkbox"]:first-of-type:checked + label {
+    color: green;
+    border: 2px solid green;
+}
+
+input[type="checkbox"]:nth-of-type(2):checked + label {
+    color: red;
+    border: 2px solid red;
+}
+
+
+#getal:in-range + label{
+    border: 5px solid green;
+}
+
+#getal:out-of-range + label {
+    border: 5px solid red;
+}
+
+a[target="red"] {
+    color: red;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: gold;
+}
+
+footer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
